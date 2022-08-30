@@ -1,0 +1,10 @@
+lxml
+cmake
+dlib~=19.24.0
+numpy~=1.22.4
+boto3~=1.24.2
+imageio-ffmpeg
+imageio~=2.19.3
+botocore~=1.27.2
+opencv-python-headless~=4.5.5
+opencv-python~=4.6.0.66
