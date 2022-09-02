@@ -10,3 +10,7 @@ COPY requirements.txt app/
 RUN python3 -m pip install -r app/requirements.txt
 
 COPY src app/
+
+WORKDIR /app
+
+CMD exec gunicorn --bind 0.0.0.0:8080 --workers 1 --threads 4 app:app

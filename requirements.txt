@@ -3,6 +3,8 @@ cmake
 dlib
 numpy
 boto3
+Flask
+gunicorn
 imageio-ffmpeg
 imageio
 botocore
