@@ -3,12 +3,11 @@ kind: Service
 metadata:
   name: video-sink
 spec:
-  containers:
-    - image: 771830474512.dkr.ecr.us-east-1.amazonaws.com/video-consumer-knative-microservice:latest
-      imagePullPolicy: Always
-      name: video-sink 
-      ports:
-      - containerPort: 443
-        protocol: TCP
-      - containerPort: 8443
-        protocol: TCP
+  template:
+    spec:
+      containers:
+      - image: 771830474512.dkr.ecr.us-east-1.amazonaws.com/video-consumer-knative-microservice:latest
+        name: video-sink 
+        ports:
+        - containerPort: 443
+          protocol: TCP

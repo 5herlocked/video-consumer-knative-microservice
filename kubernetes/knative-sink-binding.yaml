@@ -4,7 +4,7 @@ metadata:
   name: kinesis-event-source
 spec:
   subject:
-    apiVersion:
+    apiVersion: v1
     kind: Service
     name: kinesis-knative-eventer
   sink:
