@@ -1,0 +1,13 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: kinesis-events-trigger
+  annotations:
+    knative-eventing-injection: enabled
+spec:
+  broker: video-events-broker
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: video-sink

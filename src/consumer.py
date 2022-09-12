@@ -4,12 +4,13 @@
 import json
 import logging
 import os
+from consumer_helper import *
 
 from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/', methods=[POST])
+@app.route('/', methods=["POST"])
 def received_event():
     pass
 
