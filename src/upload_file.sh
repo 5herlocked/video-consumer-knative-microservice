@@ -1,5 +1,5 @@
-aa_id="AKIAWKEKNRXPTNLXNTS3"
-sk="EvdPeBHFAAmf3pxkCA9A3H369/+cTVlbrg/JpqgP"
+aa_id="xxxx"
+sk="xxxx"
 
 export GST_PLUGIN_PATH=/home/ubuntu/lib/kinesis-video/build
 export LD_LIBRARY_PATH=/home/ubuntu/lib/kinesis-video/open-source/local/lib
