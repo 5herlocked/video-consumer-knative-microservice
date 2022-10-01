@@ -1,4 +1,3 @@
-lxml
 cmake
 dlib
 numpy

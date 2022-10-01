@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=["POST"])
 def received_event():
+    job = request.data
     video_file = download_and_censor(job["InputInformation"]["KinesisVideo"]["StreamArn"], job)
     censored = censor(video_file, job)
     save_video(censored, job, ctx["video_stream"], ctx["storage"])
