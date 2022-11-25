@@ -213,3 +213,4 @@ cython_debug/
 
 *.mp4
 !/.env.dev
+.conf

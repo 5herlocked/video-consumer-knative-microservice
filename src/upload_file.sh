@@ -1,5 +1,4 @@
-aa_id="xxxx"
-sk="xxxx"
+source .conf
 
 export GST_PLUGIN_PATH=/home/ubuntu/lib/kinesis-video/build
 export LD_LIBRARY_PATH=/home/ubuntu/lib/kinesis-video/open-source/local/lib

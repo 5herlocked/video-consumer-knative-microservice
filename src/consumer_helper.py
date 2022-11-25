@@ -170,22 +170,24 @@ async def do_download_and_censor(job):
     return 
 
 
-# def match_track_shards():
-#     global data_stream, video_stream, storage, session, running
+"""
+def match_track_shards():
+    global data_stream, video_stream, storage, session, running
 
-#     pool = Pool()
-#     m = multiprocessing.Manager()
-#     q = m.Queue()
+    pool = Pool()
+    m = multiprocessing.Manager()
+    q = m.Queue()
     
-#     while running:
-#         job = q.get()
-#         video_file = download_and_censor(job["InputInformation"]["KinesisVideo"]["StreamArn"], job)
-#         censored = censor(video_file, job)
-#         save_video(censored, job, ctx["video_stream"], ctx["storage"])
+    while running:
+        job = q.get()
+        video_file = download_and_censor(job["InputInformation"]["KinesisVideo"]["StreamArn"], job)
+        censored = censor(video_file, job)
+        save_video(censored, job, ctx["video_stream"], ctx["storage"])
 
-#         import gc
-#         gc.collect()
+        import gc
+        gc.collect()
 
-#     pool.terminate()
-#     pool.join()
-#     # pass
+    pool.terminate()
+    pool.join()
+    # pass
+"""
